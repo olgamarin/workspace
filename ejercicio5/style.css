@@ -1,0 +1,18 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+
+.label-default {
+    background-color: #2D3A9C;
+}
+
+.dropdown{
+  display: inline-block;
+  margin-left: 500px;
+}
+
+.checkbox{
+  margin-left: 1100px;
+}
