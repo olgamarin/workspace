@@ -3,9 +3,10 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-||<link rel="stylesheet" href="style.css">
-  <title>World Tech Makers Inc.</title>
-  <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>World Tech Makers Inc.</title>
+    <link rel="icon" type="image/png" href="favicon.png">
 
 
   <meta name="csrf-param" content="authenticity_token" />
@@ -160,22 +161,17 @@
     </section>
 
     <section class="newsletter">
-      <form action="/v2/newsletter" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="sKSJcz9Iv86EChxzvC8Xvc6c6+TiPW5zCL3H63rU+CjiOAs7/C2NbpUUZ2u3Ln1vI6C3SRjEjkKCTK6Wn8Evxw==" />
+
 
       <div class="newsletter">
-       <h3> Descarga nuestro brochure</h3>
+       <input type="text" placeholder="tu email"><h3> Descarga nuestro brochure</h3>
       </div>
+      <div class="boton1">
 
-      <div>
-        <input type="text" name="user[email]" placeholder="Tu email" class="newsletter__input"/>
-      </div>
-
-      <div>
       <input type="submit" name="submit" value="Subscríbete" class="newsletter__button"/>
       </div>
-
-      <input type="checkbox" name="user[brochure]" style="visibility: hidden;" checked="checked">
-      </form></section>
+  </section>
+     <!-- -->
 
 <section class="ribbon ribbon--nobg ribbon--simple">
   <div class="ribbon__subtitle">

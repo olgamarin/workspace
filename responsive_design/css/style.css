@@ -10,6 +10,7 @@ font-size: 16px;}
 .home-wrapper{
 
   background:url('../images/bg_2.jpg') no-repeat, center, center, top ;
+  background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) )
   background-size: cover;
   color: white;
 }
@@ -57,12 +58,12 @@ line-height: 1.2;
 }
 
 #home p{
-  font-size: 20px;
+  font-size: 24px;
   margin-top: 40px;
 }
 .container {
 
-  width: 992px;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -175,4 +176,39 @@ footer{
   font-size: 18px;
   padding: 80px;
   text-align: center;
+}
+
+@media only screen and (max-width: 1200px){
+
+}
+@media only screen and (max-width: 992px){
+    .home-wrapper{
+      width: 100%;
+    }
+    #home h1{
+      font-size: 48px;}
+    }
+    #home p{
+      font-size:18px;}
+
+     #contacto{
+      width: 100%;
+     }
+
+@media only screen and (max-width: 768px){
+  header nav{
+    margin: 10px;
+    text-align: center;
+    float: none;
+  }
+
+  header .logo{
+    font-size: 16px;
+    text-align: center;
+  }
+
+  header nav a{
+    margin-left: 10px;
+    padding: 5px 10px;
+  }
 }
