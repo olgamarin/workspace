@@ -23,6 +23,7 @@ header{
 }
 
 header nav{
+  display: flex;
   float: right;
   margin:10px;
 }
