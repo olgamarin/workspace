@@ -1,0 +1,48 @@
+<!--Escribir una funcion fizzbuzz que reciba como unico argumento un numero, la funcion debe cumplir las siguientes condiciones:
+
+Si él numero de entrada es multiplo de 3 debe retornar él string fizz
+Si él numero de entrada es multiplo de 5 debe retornar él string buzz
+Si él numero de entrada es multiplo tanto de 3 como de 5 debe retornar él string fizzbuzz
+Si él numero no cumple ninguna de estas condiciones debe retornar él mismo numero de entrada.
+ -->
+
+
+<!DOCTYPE html>
+<html>
+ <head>
+<meta charset="UTF-8">
+</head>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+
+var resultado;
+var n1 = prompt("Dime un numero ");
+
+
+function fizzbuzz (resultado){
+
+if (n1%3){
+  resultado="fizz";
+}
+
+else if (n1%5) {
+  resultado="buzz";
+}
+
+else if (n1%3 && n1%5){
+  resultado="fizzbuzz";
+}
+
+else if (n1 !== n1%3 && n1%5 )
+  resultado="no cumple";
+}
+
+document.getElementById("demo").innerHTML = resultado;
+</script>
+
+</body>
+</html>

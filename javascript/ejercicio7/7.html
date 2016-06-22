@@ -1,0 +1,24 @@
+<!--Realiza un ciclo que muestre la tabla del nueve. Ej (1*9 = 9 , 2 * 9 = 18, 3 * 9 =27) -->
+<!DOCTYPE html>
+<html>
+ <head>
+<meta charset="UTF-8">
+</head>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+
+    for (i=9;i<10;i++){
+    document.write("<br><b>La tabla del " + i + ":</b><br>")
+    for (j=1;j<10;j++) {
+       document.write(i + " x " + j + ": ")
+       document.write(i*j)
+       document.write("<br>")
+    }
+}
+
+    </script>
+
+  </body>
+</html>
