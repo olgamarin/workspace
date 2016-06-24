@@ -18,14 +18,15 @@
     <p id="demo"></p>
 
     <script>
-
-    var arreglo = [1,3,5,6],r=0;
-    var resultado;
-    function sumame (resultado){
-   for(var q=0;q<arreglo.length;q++) {resultado+=arreglo[q];
+    var suma;
+    var arreglo = [1,3,5,6,1];
+    var resultado =0;
+    function sumame (arreglo){
+   for(var q=0;q<arreglo.length;q++)
+    {resultado+=arreglo[q];
    }
-
-
+}
+sumame (arreglo)
     document.getElementById("demo").innerHTML = resultado ;
     </script>
 

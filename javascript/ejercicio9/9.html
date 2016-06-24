@@ -11,12 +11,7 @@ El promedio se define como la suma de los elementos dividido en el número
     promediame([1,2,3,4]) => 2.5
     arr.map(callback[, thisArg])
 
-
-    var numbers = [1, 4, 9];
-var doubles = numbers.map(function(num) {
-  return num * 2;
-});
-// doubles is now [2, 8, 18]. numbers is still [1, 4, 9]-->
+-->
 
 <!DOCTYPE html>
 <html>
@@ -27,13 +22,19 @@ var doubles = numbers.map(function(num) {
     <p id="demo"></p>
 
     <script>
-    var numbers =[1,2,3];
-    var promedio = numbers.map(
-    function (promediame){
-      return promediame%3;
 
-    });
 
+    function promediame(numbers){
+     var promedio;
+    var numbers1 =[1,2,3];
+    for (j=0; j<=numbers.length; j=++){
+      sumar = numbers [j];
+
+    }
+  promedio = sumar/numbers.length;
+  document.getElementById("demo").innerHTML = promedio ;
+    };
+promediame(numbers1);
         </script>
 
   </body>

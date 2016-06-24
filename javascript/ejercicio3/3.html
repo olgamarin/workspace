@@ -19,29 +19,32 @@ Si él numero no cumple ninguna de estas condiciones debe retornar él mismo num
 
 <script>
 
-var resultado;
-var n1 = prompt("Dime un numero ");
+fizzbuzz(prompt("Dime un numero "));
 
+function fizzbuzz (n1){
 
-function fizzbuzz (resultado){
+  //var n1 = prompt("Dime un numero ");
 
-if (n1%3){
-  resultado="fizz";
+  if (n1%3 == 0 && n1%5 == 0){
+    alert("fizzbuzz");
+  }
+
+  else if (n1%3 == 0) {
+    alert("fizz");
+  }
+
+  else if (n1%5 == 0){
+    alert("buzz");
+  }
+
+  else{
+    alert("no cumple");
+
+  }
 }
 
-else if (n1%5) {
-  resultado="buzz";
-}
 
-else if (n1%3 && n1%5){
-  resultado="fizzbuzz";
-}
 
-else if (n1 !== n1%3 && n1%5 )
-  resultado="no cumple";
-}
-
-document.getElementById("demo").innerHTML = resultado;
 </script>
 
 </body>
