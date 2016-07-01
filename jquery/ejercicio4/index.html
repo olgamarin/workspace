@@ -1,0 +1,50 @@
+<!--Al ingresar tareas (cuando oprimen Enter) se deben agregar debajo del cuadro de texto.
+Cosas para tener en cuenta:
+
+Cuando se pasa el mouse sobre una tarea se debe cambiar su color a un gris más oscuro y mostrar una X.
+Al hacer click sobre la X se debe eliminar la tarea.
+Una tarea se debe marcar como completada cuando se hace click en el checkbox.
+Si se vuelve a hacer click sobre un checkbox de una tarea completada, debe volver a su estado inicial.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Tareas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Lista de Tareas</h1>
+
+    <input type="text" id="input" placeholder="Cual es tu tarea?">
+    <ul class="todo-list">
+    <input type="checkbox">x</input>
+    </ul>
+    <div class="completed">
+    <del>completada</del>
+  </div>
+  </div>
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <script>
+
+     $(document).ready(function(){
+
+      $('#input').on('mouseevent',function(){
+        $('#input').append().toggleClass('.completed');;
+        ('.todo-list').on('mouseover' function(){
+          $(this).text('#input').show();
+          $('#checkbox').find(':checked');
+          $('checkbox').removeClass('input:checkbox', '.completed');
+          $(this).addClass('input:checkbox', '.completed');
+
+        });
+      });
+     });
+  </script>
+</body>
+</html>
