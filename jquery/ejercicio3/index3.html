@@ -15,7 +15,7 @@
 
     .blue { background: blue; }
     .red { background: red; }
-    .yellow {background: yellow;}
+    }
 
   </style>
 </head>
@@ -44,9 +44,9 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script>
     $(document).ready(function(){
-      $('.blue').on('click',function(){
-        //$(this).addClass('.yellow').show();
-       $(this).css('.yellow');
+      $('.blue').on('mouseenter','click',function(){
+        $(this).css('backgound''yellow');
+
       });
     });
   </script>

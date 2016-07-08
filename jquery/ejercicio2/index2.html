@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Template</title>
 
+
   <style>
     .square {
       display: inline-block;
@@ -26,15 +27,17 @@
     <div class="square"></div>
     <div class="square"></div>
   </div>
-  <button class="squares">Agregar cuadrado</button>
+  <button  id="cuadrados">Agregar cuadrado</button>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script>
   $(document).ready(function() {
-  $('.squares').on('click', 'button', 'div', function() {
-    $(this).closest('div')
-    .find('.square')
-    .slideToggle();
+  $('#cuadrados').click( function() {
+  $('.squares').append('<div class="square"></div>')
+    });
+    //$(this).closest('div')
+    //.find('.square')
+   // .slideToggle();
   });
 
   </script>

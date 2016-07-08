@@ -21,6 +21,7 @@ Si se vuelve a hacer click sobre un checkbox de una tarea completada, debe volve
     <input type="text" id="input" placeholder="Cual es tu tarea?">
     <ul class="todo-list">
     <input type="checkbox">x</input>
+    <li></li>
     </ul>
     <div class="completed">
     <del>completada</del>
@@ -35,12 +36,26 @@ Si se vuelve a hacer click sobre un checkbox de una tarea completada, debe volve
      $(document).ready(function(){
 
       $('#input').on('mouseevent',function(){
-        $('#input').append().toggleClass('.completed');;
-        ('.todo-list').on('mouseover' function(){
-          $(this).text('#input').show();
-          $('#checkbox').find(':checked');
-          $('checkbox').removeClass('input:checkbox', '.completed');
-          $(this).addClass('input:checkbox', '.completed');
+        //usar child y parent
+        $('#input').append().toggleClass('.completed');
+
+        if ('#li'== ''){
+          alert('ingresa un texto');
+        }
+
+        $('.todo-list').on('mouseover' function(){
+          $(this).text('<li class="texto"></li>')
+          if('#checkbox').is(':checked'){
+             (display:block);
+          };
+          else{
+              (display:none);
+            }
+            $('li').parent().remove
+
+            //('checkbox').removeClass('input:checkbox', '.completed')
+            //
+          //$(this).addClass('input:checkbox', '.completed');
 
         });
       });
